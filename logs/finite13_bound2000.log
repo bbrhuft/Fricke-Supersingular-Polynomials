@@ -1,0 +1,4 @@
+PARI version [2, 17, 2]
+tests run: 300  (all primes 5 <= p <= 2000, p != 13)
+primes where deg P_p = n-1 (j at t=0 supersingular): [149, 191, 233, 241, 263, 647, 1303, 1709, 1877]
+==== finite13.gp: ALL CHECKS PASSED ====

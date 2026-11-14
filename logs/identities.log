@@ -1,0 +1,42 @@
+PARI version [2, 17, 2]
+---- level 7 ----
+PASS  I1  D(h) = -f*h                         N=7   [difference = O(q^200)]
+PASS  I2  j = jnum(h)/h^N                     N=7   [difference = O(q^200)]
+PASS  I3  E4 = f^2*e4num/(h^2+Ah+K)           N=7   [difference = O(q^201)]
+PASS  I4  E6 = f^3*e6num/(h^2+Ah+K)^k         N=7   [difference = O(q^201)]
+PASS  I5  Delta = f^6*h^N/(h^2+Ah+K)^k        N=7   [difference = O(q^202)]
+PASS  I6  (2fD^2f-3(Df)^2)/(4f^4) = Phi0(h)   N=7   [difference = O(q^201)]
+PASS  I7  Phi0 = c(X+d)/X^2                   N=7
+PASS  I8  (h-K/h)^2 = X^2-T*X-U               N=7
+PASS  I9  R_N(J,X(h)) = (J-j(h))(J-j(K/h))    N=7
+PASS  I10 j-1728 = e6num^2*(..)/h^N           N=7
+PASS  I11 f = sum u*(n) X^-n (to O(q^60))     N=7
+     disc_h(jnum - J h^N) = Mat([7, 91]) * [J - 1728, 4; J, 4]
+PASS  B1  disc_h(jnum-J*h^N) = c*J^a*(J-1728)^b, c in <2,3,N>   N=7
+     small discriminants/resultants: [[3, 1; 7, 5], [-1, 1; 2, 8; 3, 6; 7, 21], [-1, 1; 2, 6; 3, 3; 7, 14], [2, 6; 7, 5], [2, 6; 3, 3; 7, 7], [-1, 1; 3, 3], [3, 3; 7, 2], [2, 2; 7, 2]]
+PASS  B2  all auxiliary discriminants/resultants supported on {2,3,N}  N=7
+---- level 5 ----
+PASS  I1  D(h) = -f*h                         N=5   [difference = O(q^200)]
+PASS  I2  j = jnum(h)/h^N                     N=5   [difference = O(q^200)]
+PASS  I3  E4 = f^2*e4num/(h^2+Ah+K)           N=5   [difference = O(q^201)]
+PASS  I4  E6 = f^3*e6num/(h^2+Ah+K)^k         N=5   [difference = O(q^201)]
+PASS  I5  Delta = f^6*h^N/(h^2+Ah+K)^k        N=5   [difference = O(q^202)]
+PASS  I6  (2fD^2f-3(Df)^2)/(4f^4) = Phi0(h)   N=5   [difference = O(q^201)]
+PASS  I7  Phi0 = c(X+d)/X^2                   N=5
+PASS  I8  (h-K/h)^2 = X^2-T*X-U               N=5
+PASS  I9  R_N(J,X(h)) = (J-j(h))(J-j(K/h))    N=5
+PASS  I10 j-1728 = e6num^2*(..)/h^N           N=5
+PASS  I11 f = sum u*(n) X^-n (to O(q^60))     N=5
+     disc_h(jnum - J h^N) = Mat([5, 65]) * [J - 1728, 2; J, 4]
+PASS  B1  disc_h(jnum-J*h^N) = c*J^a*(J-1728)^b, c in <2,3,N>   N=5
+     small discriminants/resultants: [[2, 4; 5, 5], [2, 2; 5, 7], [-1, 1; 2, 4; 3, 2; 5, 10], [2, 4; 3, 2; 5, 5], [2, 4; 3, 4; 5, 7], [-1, 1; 2, 4], [2, 4; 5, 3], [2, 2; 5, 3]]
+PASS  B2  all auxiliary discriminants/resultants supported on {2,3,N}  N=5
+PASS  H1  Heun(level 7, mu=0) = rational normal form
+PASS  H1  Heun(level 7, mu=1) = rational normal form
+PASS  H2  Heun(level 5, mu=0) = rational normal form
+PASS  H2  Heun(level 5, mu=1) = rational normal form
+PASS  H3  Heun(level 5, conjugate phi, mu=0) = same rational normal form
+PASS  H3  Heun(level 5, conjugate phi, mu=1) = same rational normal form
+PASS  G1  gauge shift s^(-1/2): (A,B)=(6,2) -> (60,15)  [T,U]=[26, 27]
+PASS  G1  gauge shift s^(-1/2): (A,B)=(3,3) -> (35,25)  [T,U]=[44, 16]
+==== identities.gp: ALL CHECKS PASSED ====

@@ -1,0 +1,43 @@
+PARI version [2, 17, 2]
+---- level 13 ----
+PASS  J1  D(h) = -f*h   [difference = O(q^200)]
+PASS  J2  j = d3*v4^3/h^13   [difference = O(q^200)]
+PASS  J3  E4 = f^2*v4/(d2*d3)   [difference = O(q^201)]
+PASS  J4  E6 = f^3*v6/(d2*d3^2)   [difference = O(q^201)]
+PASS  J5  Delta = f^6*h^13/(d2^3*d3^4)   [difference = O(q^202)]
+PASS  J6  (2fD^2f-3(Df)^2)/(4f^4) = w*R(w)   [difference = O(q^201)]
+PASS  J7  j - 1728 = d2*v6^2/h^13
+PASS  J8  (h-13/h)^2 = t^2-52 with t=h+13/h
+PASS  J9  d2 = h*(t+6), d3 = h*(t+5)
+PASS  J10 d2(13/h)=13 d2/h^2, d3(13/h)=13 d3/h^2
+PASS  J11 R13 is monic of degree 2 in J with integer coefficients
+PASS  J12 R13(J,h+13/h) = (J-j(h))(J-j(13/h))
+     trR = [t + 5, 1; t^4 + 7*t^3 - 32*t^2 - 254*t - 180, 1; t^8 + 14*t^7 - 15*t^6 - 956*t^5 - 2895*t^4 + 12974*t^3 + 60805*t^2 - 10836*t - 194076, 1]
+     nmR  = [t + 5, 2; t^4 + 254*t^3 + 5077*t^2 + 34092*t + 75492, 3]
+PASS  J13 R13 agrees with the pilot's trace/norm
+PASS  J14 t = q^-1 - 2 + O(q)
+     disc_h(jn - J h^13) = Mat([13, 169]) * [J - 1728, 6; J, 8]
+PASS  B1  disc_h(jn - J h^13) = c J^a (J-1728)^b with c supported on {2,3,13}
+     auxiliary quantities: [[-1, 1; 2, 4; 3, 1; 13, 15], [2, 10; 3, 6; 13, 35], [-1, 1; 2, 4], [-1, 1; 3, 3], [-1, 1; 2, 10; 3, 5; 13, 24], [2, 4; 3, 2; 13, 4], [2, 6; 13, 5], [2, 4; 3, 4; 13, 7], [2, 6; 3, 3; 13, 6], Mat([13, 1]), [2, 4; 13, 1], [3, 3; 13, 1], Mat([13, 4]), [-1, 1; 13, 6], Mat([13, 13]), [2, 4; 13, 1], [-1, 1; 2, 4], [-1, 1; 3, 3]]
+PASS  B2  all auxiliary discriminants/resultants supported on {2,3,13}
+PASS  G0  G(w) = sqrt(f) has coefficients in Z[1/2] (to w^150)
+PASS  G1  L_G G = 0 in Q[[w]] (to w^148)
+PASS  O000  operator (A,B,C0) polynomial, degrees [5, 4, 3], A0=0, A1=B0=1
+PASS  Y000  (A d^2 + B d + C0) [l2^ab l3^bb s^(-mu/2) G] = 0 (to w^145)
+PASS  O001  operator (A,B,C0) polynomial, degrees [5, 4, 3], A0=0, A1=B0=1
+PASS  Y001  (A d^2 + B d + C0) [l2^ab l3^bb s^(-mu/2) G] = 0 (to w^145)
+PASS  O010  operator (A,B,C0) polynomial, degrees [5, 4, 3], A0=0, A1=B0=1
+PASS  Y010  (A d^2 + B d + C0) [l2^ab l3^bb s^(-mu/2) G] = 0 (to w^145)
+PASS  O011  operator (A,B,C0) polynomial, degrees [5, 4, 3], A0=0, A1=B0=1
+PASS  Y011  (A d^2 + B d + C0) [l2^ab l3^bb s^(-mu/2) G] = 0 (to w^145)
+PASS  O100  operator (A,B,C0) polynomial, degrees [5, 4, 3], A0=0, A1=B0=1
+PASS  Y100  (A d^2 + B d + C0) [l2^ab l3^bb s^(-mu/2) G] = 0 (to w^145)
+PASS  O101  operator (A,B,C0) polynomial, degrees [5, 4, 3], A0=0, A1=B0=1
+PASS  Y101  (A d^2 + B d + C0) [l2^ab l3^bb s^(-mu/2) G] = 0 (to w^145)
+PASS  O110  operator (A,B,C0) polynomial, degrees [5, 4, 3], A0=0, A1=B0=1
+PASS  Y110  (A d^2 + B d + C0) [l2^ab l3^bb s^(-mu/2) G] = 0 (to w^145)
+PASS  O111  operator (A,B,C0) polynomial, degrees [5, 4, 3], A0=0, A1=B0=1
+PASS  Y111  (A d^2 + B d + C0) [l2^ab l3^bb s^(-mu/2) G] = 0 (to w^145)
+     double-pole residue at l2=0: [4*xa + 1, 1; 4*xa + 3, 1] ;  at l3=0: [3*xb + 1, 1; 3*xb + 2, 1]
+PASS  E1  local exponents: l2 -> {-1/4,-3/4}, l3 -> {-1/3,-2/3}
+==== identities13.gp: ALL CHECKS PASSED ====
